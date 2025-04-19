@@ -7,7 +7,12 @@
  */
 
 function loveDifference(age1, age2) {
-
+    let ageDifference = 0;
+    if (age1 > age2) {
+        ageDifference = age1 - age2;
+    } else if (age1 < age2) {
+        ageDifference = age2 - age1;
+    } return ageDifference;
 }
 
 // Prueba 1: Diferencia básica
@@ -22,4 +27,8 @@ console.log(loveDifference(30, 30)); // Resultado esperado: 0
 // Prueba 4: Diferencia con edades grandes (el amor no tiene edad)
 console.log(loveDifference(100, 80)); // Resultado esperado: 20
 
+// Prueba 5: Diferencia con edades grandes con valores invertidos
+// console.log(loveDifference(80, 100)); //Resultado esperado: 20
+
 // BONUS: Implementa la función en una sola línea
+
